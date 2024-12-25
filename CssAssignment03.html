@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 03</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      body {
+        background-image: url(./background-image.jpg);
+      }
+      .form {
+        width: 30vw;
+        height: 60vh;
+        margin: 10vh auto;
+        /* border: 2px solid white; */
+        color: white;
+        padding: 40px;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.32);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5.7px);
+        -webkit-backdrop-filter: blur(5.7px);
+        border: 2px solid rgba(255, 255, 255, 1);
+      }
+      h1 {
+        font-size: 2rem;
+        font-weight: 800;
+        margin: 3.5vh 10vw;
+      }
+      input[name="email"],
+      input[name="password"] {
+        display: block;
+        width: 95%;
+        border: none;
+        border-bottom: 2px solid white;
+        background-color: transparent;
+      }
+      label[for="password"],
+      label[for="email"] {
+        display: block;
+      }
+      input:focus {
+        border: none;
+        outline: none;
+      }
+      label[for="remember-me"] {
+        margin-right: 20%;
+      }
+      label[for="fp"] {
+        margin-left: 11%;
+      }
+      input[type="checkbox"]:hover {
+        cursor: pointer;
+      }
+      input[type="submit"] {
+        border: none;
+        width: 95%;
+        border-radius: 50px;
+        font-weight: 900;
+        padding: 5px;
+        margin: 40px 10px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: rgb(54, 54, 54);
+        color: white;
+      }
+      input[type="submit"]:active {
+        scale: 0.9;
+      }
+      .crf {
+        margin-top: 40px;
+      }
+      .dhaar {
+        margin: 0px 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form">
+      <h1>Login</h1>
+      <form>
+        <label for="email">Email</label>
+        <input type="text" name="email" />
+        <label for="password">Password</label>
+        <input type="password" name="password" />
+        <div class="crf">
+          <input type="checkbox" name="remember-me" />
+          <label for="remember-me">Remember Me</label>
+          <label for="fp">Forgot Password</label>
+        </div>
+        <input type="submit" value="Log in" />
+        <span class="dhaar">Don't have a account Register</span>
+      </form>
+    </div>
+  </body>
+</html>
